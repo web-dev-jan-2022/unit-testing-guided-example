@@ -1,13 +1,29 @@
 function sum(a, b) {
-  return;
+  if (typeof(a) === "undefined" && typeof(b) === "undefined") {
+    return 0
+  } else if (typeof(b) === "undefined") {
+    return a;
+  } else {
+    return a + b;
+  }
 }
 
 function subtract(a, b) {
-  return;
+  if (typeof(a) === "undefined" && typeof(b) === "undefined") {
+    return 0
+  } else if (typeof(b) === "undefined") {
+    return a;
+  } else {
+    return a - b;
+  }
 }
 
 function divide(a, b) {
-  return;
+  if (b === 0) {
+    throw new Error('You cannot divide by zero');
+  } else {
+    return a / b;
+  }
 }
 
 function multiply(a, b) {
