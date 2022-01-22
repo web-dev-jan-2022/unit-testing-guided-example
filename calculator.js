@@ -27,7 +27,11 @@ function divide(a, b) {
 }
 
 function multiply(a, b) {
-  return a * b;
+  if (a > 0 && b > 0) {
+    return a * b;
+  } else if (a === 0 || b === 0) {
+    return 0
+  }
 }
 
 // The following is required to make unit tests work. Please ignore it.
